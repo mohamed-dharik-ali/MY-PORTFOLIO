@@ -1,6 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "echo \"Static site\"",
+  "builds": [
+    { "src": "**/*", "use": "@vercel/static" }
+  ],
   "env": {},
   "headers": [
     {
