@@ -185,13 +185,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contact-form');
   const msg = document.getElementById('form-msg');
   
-  // EmailJS integration — IMPORTANT: Replace these with your actual EmailJS credentials
-  // Get these from: https://dashboard.emailjs.com/admin
-  // 1. SERVICE_ID: Your Email Service ID (e.g., 'service_abc123')
-  // 2. TEMPLATE_ID: Your Email Template ID (e.g., 'template_xyz789')
-  // 3. PUBLIC_KEY: Already set in index.html — same key used to initialize emailjs above
-  const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID_HERE';
-  const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID_HERE';
+  // EmailJS integration — configured with your provided values
+  // SERVICE_ID and TEMPLATE_ID set below (from EmailJS dashboard)
+  // PUBLIC_KEY is initialized in index.html
+  const EMAILJS_SERVICE_ID = 'service_jwssn8p';
+  const EMAILJS_TEMPLATE_ID = 'template_efn88wp';
   // If you initialized EmailJS in the HTML with your public key, you don't need to call init here.
 
   form.addEventListener('submit', (e) => {
