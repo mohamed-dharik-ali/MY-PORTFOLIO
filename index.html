@@ -31,7 +31,8 @@
       <div class="container">
         <div class="hero-media">
           <picture>
-            <!-- preferred: uses uploaded file in assets; fallback to placeholder SVG -->
+            <!-- preferred: uses uploaded file in assets; include common filename and fallback -->
+            <source srcset="assets/profile.jpg" type="image/jpeg">
             <source srcset="assets/profile.jpg.jpeg" type="image/jpeg">
             <img class="profile-img" src="assets/profile.svg" alt="Mohamed Dharik Ali profile picture" loading="lazy">
           </picture>
