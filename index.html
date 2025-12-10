@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mohamed Dharik Ali — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Mohamed Dharik Ali</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#academics">Academics</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn ghost resume-link" href="resume.pdf" download>Download Resume</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-media">
+          <picture>
+            <!-- preferred: uses uploaded file in assets; fallback to placeholder SVG -->
+            <source srcset="assets/profile.jpg.jpeg" type="image/jpeg">
+            <img class="profile-img" src="assets/profile.svg" alt="Mohamed Dharik Ali profile picture" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="hero-content">
+          <h2 id="hero-title">Hello — I'm <span class="typing-name">Mohamed</span></h2>
+          <p class="lead">An aspiring Full Stack Developer. Currently pursuing B.Tech in Information Technology (2nd year).</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn primary">Contact Me</a>
+            <a href="#skills" class="btn ghost">My Skills</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section removed as requested -->
+
+    <section id="about" class="container section about reveal-up">
+      <h3>About Me</h3>
+      <p>My name is <strong>Mohamed Dharik Ali</strong>. I am an aspiring full stack developer currently pursuing <strong>B.Tech in Information Technology (2nd year)</strong>. I enjoy building responsive web applications and learning modern frontend and backend technologies.</p>
+      <p>I am very interested in coding and enjoy solving problems through software. I'm currently learning new technologies and actively building small projects to strengthen my skills and gain hands-on experience.</p>
+    </section>
+
+    <div class="section-separator" aria-hidden="true">
+      <svg class="sep-wave" viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0 40 C 300 10 900 70 1200 40 L1200 80 L0 80 Z"/></svg>
+      <div class="sep-shapes">
+        <span class="sep-shape s1"></span>
+        <span class="sep-shape s2"></span>
+        <span class="sep-shape s3"></span>
+      </div>
+    </div>
+
+    <section id="skills" class="container section skills">
+      <h3>Skills</h3>
+      <div class="skills-grid reveal-up">
+        <div class="skill-col">
+          <h4>Frontend Technologies</h4>
+          <div class="skill">
+            <div class="skill-row"><span class="skill-name">HTML</span><span class="skill-percent">75%</span></div>
+            <div class="progress" data-value="75"><div class="progress-bar"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-row"><span class="skill-name">CSS</span><span class="skill-percent">75%</span></div>
+            <div class="progress" data-value="75"><div class="progress-bar"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-row"><span class="skill-name">JavaScript</span><span class="skill-percent">25%</span></div>
+            <div class="progress" data-value="25"><div class="progress-bar"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-row"><span class="skill-name">React</span><span class="skill-percent">25%</span></div>
+            <div class="progress" data-value="25"><div class="progress-bar"></div></div>
+          </div>
+        </div>
+        <div class="skill-col">
+          <h4>Soft Skills</h4>
+          <div class="skill">
+            <div class="skill-row"><span class="skill-name">Communication</span><span class="skill-percent">50%</span></div>
+            <div class="progress" data-value="50"><div class="progress-bar"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-row"><span class="skill-name">Leadership</span><span class="skill-percent">50%</span></div>
+            <div class="progress" data-value="50"><div class="progress-bar"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-row"><span class="skill-name">Problem Solving</span><span class="skill-percent">50%</span></div>
+            <div class="progress" data-value="50"><div class="progress-bar"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-separator" aria-hidden="true">
+      <svg class="sep-wave" viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0 40 C 300 70 900 10 1200 40 L1200 80 L0 80 Z"/></svg>
+      <div class="sep-shapes">
+        <span class="sep-shape s4"></span>
+        <span class="sep-shape s5"></span>
+      </div>
+    </div>
+
+    <section id="academics" class="container section academics">
+      <h3>Academic Performance</h3>
+
+      <div class="edu-cards">
+        <article class="edu-card" data-value="81">
+          <h4>Current CGPA</h4>
+          <p class="score">8.1 / 10</p>
+          <div class="edu-progress"><div class="edu-bar"></div></div>
+          <div class="edu-meta"><strong>81%</strong></div>
+        </article>
+
+        <article class="edu-card" data-value="90">
+          <h4>10th Grade</h4>
+          <p class="score">451 / 500</p>
+          <div class="edu-progress"><div class="edu-bar"></div></div>
+          <div class="edu-meta"><strong>90%</strong></div>
+        </article>
+
+        <article class="edu-card" data-value="89">
+          <h4>12th Grade</h4>
+          <p class="score">534 / 600</p>
+          <div class="edu-progress"><div class="edu-bar"></div></div>
+          <div class="edu-meta"><strong>89%</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <div class="section-separator" aria-hidden="true">
+      <svg class="sep-wave" viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0 40 C 200 10 1000 70 1200 40 L1200 80 L0 80 Z"/></svg>
+      <div class="sep-shapes">
+        <span class="sep-shape s6"></span>
+      </div>
+    </div>
+
+    <section id="contact" class="container section contact reveal-up">
+      <h3>Contact</h3>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>If you'd like to reach out, email me at <a href="mailto:mohdharik1731@gmail.com" id="display-email">mohdharik1731@gmail.com</a> or call <a href="tel:+917339509051" id="display-phone">+91-7339509051</a>.</p>
+          <p class="small">I aim to reply within 48 hours.</p>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone">
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5"></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send Message</button>
+            <div id="form-msg" class="form-msg" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Mohamed Dharik Ali — Built with ❤️</small>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK (replace if EmailJS updates their CDN) -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your public key. Replace the placeholder below with your EmailJS public key.
+    // Get this from https://dashboard.emailjs.com/admin (Integration -> API Keys)
+    (function(){
+      if (window.emailjs) {
+        try { emailjs.init('YOUR_EMAILJS_PUBLIC_KEY'); } catch(e) { /* init may throw if placeholder left */ }
+      }
+    })();
+  </script>
+  <script src="script.js"></script>
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top" title="Back to top">↑</button>
+</body>
+</html>

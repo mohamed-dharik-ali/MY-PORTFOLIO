@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.env.local
+.vscode/
+.idea/
+dist/
+build/
+*.swp
+*.swo
+*~
+
+# But DO NOT ignore the assets folder or images
+!assets/
+!assets/**
