@@ -191,11 +191,13 @@
   <!-- EmailJS SDK (replace if EmailJS updates their CDN) -->
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
-    // Initialize EmailJS with your public key. Replace the placeholder below with your EmailJS public key.
-    // Get this from https://dashboard.emailjs.com/admin (Integration -> API Keys)
+    // Initialize EmailJS with your public key.
+    // IMPORTANT: Replace 'YOUR_PUBLIC_KEY_HERE' with your actual EmailJS Public Key
+    // Get this from: https://dashboard.emailjs.com/admin/account (Integrated APIs section)
+    // Steps: 1. Sign up at emailjs.com, 2. Add an Email Service (Gmail, Outlook, etc.), 3. Create a Template, 4. Copy your Public Key below
     (function(){
       if (window.emailjs) {
-        try { emailjs.init('YOUR_EMAILJS_PUBLIC_KEY'); } catch(e) { /* init may throw if placeholder left */ }
+        try { emailjs.init('YOUR_PUBLIC_KEY_HERE'); } catch(e) { /* init may throw if placeholder left */ }
       }
     })();
   </script>
